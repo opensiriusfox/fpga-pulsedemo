@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.101 (w)1999-2019 BSI
+[*] Sun Apr 12 00:14:41 2020
+[*]
+[dumpfile] "./pulsedemo/Vpulsedemo_top.vcd"
+[savefile] "gtkWave.sav"
+[timestart] 307
+[size] 1082 822
+[pos] 2085 103
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[sst_width] 200
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 233
+@28
+TOP.pulsedemo_top.PULSE
+TOP.pulsedemo_top.CLOCK
+@8025
+TOP.pulsedemo_top.counter[10:0]
+@20000
+-
+-
+-
+-
+-
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0

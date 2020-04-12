@@ -17,7 +17,7 @@ double sc_time_stamp() {
 
 int main(int argc, char** argv) {
 	// Argument to enable the trace generation
-	bool vcdTrace = false;
+	bool vcdTrace = true;
 	VerilatedVcdC* tfp = NULL;
 
 	Verilated::commandArgs(argc, argv); // Steal the arguments	
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
 	uut->CLOCK = 0;					// start the clock low
 	uut->eval();
 
-	while (!Verilated::gotFinish()) {
+	while (!Verilated::gotFinish() and main_time < 2e3) {
 		// and toggle the clock until we call $finish.
 		uut->CLOCK = uut->CLOCK ? 0 : 1;
 		uut->eval();
